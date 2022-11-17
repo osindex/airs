@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Airs\\Airs\\": "src/"
+            "Zkuyuo\\Airs\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -32,13 +32,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Airs\\Airs\\Tests\\": "tests/"
+            "Zkuyuo\\Airs\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Airs\\Airs\\Providers\\AirsServiceProvider"
+                "Zkuyuo\\Airs\\Providers\\AirsServiceProvider"
             ]
         }
     },
