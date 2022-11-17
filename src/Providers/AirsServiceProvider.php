@@ -19,14 +19,14 @@ class AirsServiceProvider extends ServiceProvider
             $this->commands([
                 InstallCommand::class,
             ]);
-            if (config('permission.models.role') !== 'Airs\\Airs\\Models\\Role') {
+            if (config('permission.models.role') !== 'Zkuyuo\\Airs\\Models\\Role') {
                 // 避免每次都渲染
                 $this->registerMigrations();
                 $this->publishes([
                     __DIR__ . '/../../config/airs.php' => config_path('airs.php'),
                 ], 'config');
                 // 修改permission的role 确保能角色能得到菜单数据
-                $this->setConfig(config_path('permission.php'), 'models.role', 'Airs\\Airs\\Models\\Role');
+                $this->setConfig(config_path('permission.php'), 'models.role', 'Zkuyuo\\Airs\\Models\\Role');
             }
         }
 
