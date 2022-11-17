@@ -30,7 +30,7 @@ class Kernel extends HttpKernel
 {
     protected $routeMiddleware = [
         ...
-        '.permission' => \Zkuyuo\Airs\Http\Middleware\Authenticate::class,
+        'mojito.permission' => \Zkuyuo\Airs\Http\Middleware\Authenticate::class,
     ];
 
     protected $middlewareGroups = [
@@ -73,15 +73,6 @@ return [
                 ['status', '=', 1]
             ]
         ]
-    ],
-    'route_prefix' => "api", //路由前缀
-    
-    'middleware' => [
-        'basic' => 'api', //基础中间件
-
-        'auth' => ['auth:sanctum'], //鉴权中间件
-
-        'permission' => ['auth:sanctum', '.permission'] //包含权限检测的中间件
     ]
 ];
 ```
