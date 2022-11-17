@@ -1,0 +1,47 @@
+{
+    "name": "zkuyuo/airs",
+    "description": "Vue管理系统服务端脚手架",
+    "keywords": ["laravel", "admin", "vue", "element", "laravel admin", "vue admin", "element admin"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "zk",
+        "email": "zk_admin@163.com"
+      }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "spatie/laravel-permission": "~3.2",
+        "laravel/sanctum": "^2.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~5.1.0",
+        "mockery/mockery": "^1.0",
+        "orchestra/database": "~5.1.0",
+        "doctrine/dbal": "^2.8",
+        "dms/phpunit-arraysubset-asserts": "^0.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Airs\\Airs\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Airs\\Airs\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Airs\\Airs\\Providers\\AirsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability":"dev",
+    "prefer-stable": true
+}
