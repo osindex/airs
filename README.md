@@ -30,7 +30,7 @@ class Kernel extends HttpKernel
 {
     protected $routeMiddleware = [
         ...
-        'mojito.permission' => \Zkuyuo\Airs\Http\Middleware\Authenticate::class,
+        'airs.permission' => \Zkuyuo\Airs\Http\Middleware\Authenticate::class,
     ];
 
     protected $middlewareGroups = [
