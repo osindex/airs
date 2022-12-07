@@ -4,6 +4,7 @@ namespace Zkuyuo\Airs\Database;
 
 use Illuminate\Database\Seeder;
 use Zkuyuo\Airs\AdminUserFactory;
+use Zkuyuo\Airs\Models\AdminUser;
 use Zkuyuo\Airs\Models\Menu;
 use Zkuyuo\Airs\Models\PermissionGroup;
 use Spatie\Permission\Models\Permission;
@@ -237,14 +238,15 @@ class AirsTableSeeder extends Seeder
      */
     private function createdAdminUser()
     {
-        AdminUserFactory::adminUser()->truncate();
-
-        AdminUserFactory::adminUser()->create([
-            'name' => 'admin',
-            'username' => 'admin',
-            'status' => 1,
-            'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
-        ]);
+        if (!AdminUser::where('name', 'admin')->count())
+        {
+            AdminUserFactory::adminUser()->create([
+                'name' => 'admin',
+                'username' => 'admin',
+                'status' => 1,
+                'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+            ]);
+        }
     }
 
     /**
