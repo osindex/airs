@@ -12,12 +12,10 @@
     ],
     "require": {
         "php": "^7.2|^8.0",
-        "spatie/laravel-permission": "~3.2"
+        "spatie/laravel-permission": "~5.10"
     },
     "require-dev": {
-        "orchestra/testbench": "~5.1.0",
-        "mockery/mockery": "^1.0",
-        "orchestra/database": "~5.1.0",
+        "mockery/mockery": "^1.4",
         "doctrine/dbal": "^2.8",
         "dms/phpunit-arraysubset-asserts": "^0.1.0"
     },
