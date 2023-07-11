@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Resources;
+namespace Osi\Airs\Resources;
 
 
 use Illuminate\Http\Resources\Json\JsonResource;

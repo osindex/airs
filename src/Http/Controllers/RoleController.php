@@ -1,14 +1,14 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Controllers;
+namespace Osi\Airs\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
-use Zkuyuo\Airs\Http\Requests\Role\CreateOrUpdateRequest;
-use Zkuyuo\Airs\Models\Role;
-use Zkuyuo\Airs\Resources\PermissionCollection;
-use Zkuyuo\Airs\Resources\Role as RoleResource;
-use Zkuyuo\Airs\Resources\RoleCollection;
+use Osi\Airs\Http\Requests\Role\CreateOrUpdateRequest;
+use Osi\Airs\Models\Role;
+use Osi\Airs\Resources\PermissionCollection;
+use Osi\Airs\Resources\Role as RoleResource;
+use Osi\Airs\Resources\RoleCollection;
 use Spatie\Permission\Exceptions\RoleAlreadyExists;
 
 class RoleController extends Controller

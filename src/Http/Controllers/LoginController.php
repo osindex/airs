@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Controllers;
+namespace Osi\Airs\Http\Controllers;
 
 
 use App\Member;
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 use Laravel\Sanctum\PersonalAccessToken;
-use Zkuyuo\Airs\Models\AdminUser;
+use Osi\Airs\Models\AdminUser;
 
 class LoginController extends Controller
 {

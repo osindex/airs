@@ -1,15 +1,15 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Controllers;
+namespace Osi\Airs\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Zkuyuo\Airs\AdminUserFactory;
-use Zkuyuo\Airs\Http\Requests\AdminUser\CreateOrUpdateRequest;
-use Zkuyuo\Airs\Resources\AdminUser as AdminUserResource;
-use Zkuyuo\Airs\Resources\AdminUserCollection;
-use Zkuyuo\Airs\Resources\RoleCollection;
+use Osi\Airs\AdminUserFactory;
+use Osi\Airs\Http\Requests\AdminUser\CreateOrUpdateRequest;
+use Osi\Airs\Resources\AdminUser as AdminUserResource;
+use Osi\Airs\Resources\AdminUserCollection;
+use Osi\Airs\Resources\RoleCollection;
 
 class AdminUserController extends Controller
 {

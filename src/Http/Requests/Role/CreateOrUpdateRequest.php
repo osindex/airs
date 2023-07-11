@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Requests\Role;
+namespace Osi\Airs\Http\Requests\Role;
 
 
 use Illuminate\Foundation\Http\FormRequest;

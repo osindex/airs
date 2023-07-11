@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Middleware;
+namespace Osi\Airs\Http\Middleware;
 
 use Auth;
 use Route;

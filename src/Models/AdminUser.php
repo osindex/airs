@@ -1,5 +1,5 @@
 <?php
-namespace Zkuyuo\Airs\Models;
+namespace Osi\Airs\Models;
 
 
 class AdminUser extends User

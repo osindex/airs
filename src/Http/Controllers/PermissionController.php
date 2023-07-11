@@ -1,14 +1,14 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Controllers;
+namespace Osi\Airs\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use Zkuyuo\Airs\Http\Requests\Permission\CreateOrUpdateRequest;
-use Zkuyuo\Airs\Resources\PermissionCollection;
+use Osi\Airs\Http\Requests\Permission\CreateOrUpdateRequest;
+use Osi\Airs\Resources\PermissionCollection;
 use Spatie\Permission\Exceptions\PermissionAlreadyExists;
-use Zkuyuo\Airs\Models\Permission;
-use Zkuyuo\Airs\Resources\Permission as PermissionResource;
+use Osi\Airs\Models\Permission;
+use Osi\Airs\Resources\Permission as PermissionResource;
 use Auth;
 
 class PermissionController extends Controller

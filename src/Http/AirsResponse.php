@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Http;
+namespace Osi\Airs\Http;
 
 use Illuminate\Http\Response;
 

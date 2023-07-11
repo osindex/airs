@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Models;
+namespace Osi\Airs\Models;
 
 class Role extends \Spatie\Permission\Models\Role
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Controllers;
+namespace Osi\Airs\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Zkuyuo\Airs\Http\Requests\Menu\CreateOrUpdateRequest;
-use Zkuyuo\Airs\Models\Menu;
-use Zkuyuo\Airs\Models\Role;
-use Zkuyuo\Airs\Resources\Menu as MenuResource;
+use Osi\Airs\Http\Requests\Menu\CreateOrUpdateRequest;
+use Osi\Airs\Models\Menu;
+use Osi\Airs\Models\Role;
+use Osi\Airs\Resources\Menu as MenuResource;
 
 class MenuController extends Controller
 {

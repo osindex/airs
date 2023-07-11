@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Console;
+namespace Osi\Airs\Console;
 
 use Illuminate\Console\Command;
 
@@ -29,7 +29,7 @@ class InstallCommand extends Command
     public function handle()
     {
         $this->call('vendor:publish', ['--provider' => 'Spatie\Permission\PermissionServiceProvider']);
-        $this->call('vendor:publish', ['--provider' => 'Zkuyuo\Airs\Providers\AirsServiceProvider']);
+        $this->call('vendor:publish', ['--provider' => 'Osi\Airs\Providers\AirsServiceProvider']);
         $this->call('vendor:publish', ['--provider' => 'Laravel\Sanctum\SanctumServiceProvider']);
     }
 }

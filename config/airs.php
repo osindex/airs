@@ -3,7 +3,7 @@
 return [
     'guards' => [
         'admin' => [
-            'model' => \Zkuyuo\Airs\Models\AdminUser::class,
+            'model' => \Osi\Airs\Models\AdminUser::class,
             'login_fields' => [
                 'username',
             ],

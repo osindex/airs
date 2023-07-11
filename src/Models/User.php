@@ -1,12 +1,12 @@
 <?php
 
-namespace Zkuyuo\Airs\Models;
+namespace Osi\Airs\Models;
 
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Sanctum\HasApiTokens;
-use Zkuyuo\Airs\Contacts\UserContact;
+use Osi\Airs\Contacts\UserContact;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements UserContact

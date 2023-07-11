@@ -2,7 +2,7 @@
 
 $router = app('router');
 
-$router->namespace('\Zkuyuo\Airs\Http\Controllers')
+$router->namespace('\Osi\Airs\Http\Controllers')
     ->prefix('api')
     ->middleware('api')
     ->group(function ($router) {

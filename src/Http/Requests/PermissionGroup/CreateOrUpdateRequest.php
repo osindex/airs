@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Requests\PermissionGroup;
+namespace Osi\Airs\Http\Requests\PermissionGroup;
 
 
 use Illuminate\Foundation\Http\FormRequest;

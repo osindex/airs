@@ -1,12 +1,12 @@
 <?php
 
-namespace Zkuyuo\Airs\Database;
+namespace Osi\Airs\Database;
 
 use Illuminate\Database\Seeder;
-use Zkuyuo\Airs\AdminUserFactory;
-use Zkuyuo\Airs\Models\AdminUser;
-use Zkuyuo\Airs\Models\Menu;
-use Zkuyuo\Airs\Models\PermissionGroup;
+use Osi\Airs\AdminUserFactory;
+use Osi\Airs\Models\AdminUser;
+use Osi\Airs\Models\Menu;
+use Osi\Airs\Models\PermissionGroup;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 

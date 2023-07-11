@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs;
+namespace Osi\Airs;
 
 
 use Illuminate\Database\Eloquent\Model;

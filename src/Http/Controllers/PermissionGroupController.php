@@ -1,14 +1,14 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Controllers;
+namespace Osi\Airs\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use Zkuyuo\Airs\Http\Requests\PermissionGroup\CreateOrUpdateRequest;
-use Zkuyuo\Airs\Models\PermissionGroup;
-use Zkuyuo\Airs\Models\Permission;
-use Zkuyuo\Airs\Resources\PermissionGroupCollection;
-use Zkuyuo\Airs\Resources\PermissionGroup as PermissionGroupResource;
+use Osi\Airs\Http\Requests\PermissionGroup\CreateOrUpdateRequest;
+use Osi\Airs\Models\PermissionGroup;
+use Osi\Airs\Models\Permission;
+use Osi\Airs\Resources\PermissionGroupCollection;
+use Osi\Airs\Resources\PermissionGroup as PermissionGroupResource;
 
 class PermissionGroupController extends Controller
 {

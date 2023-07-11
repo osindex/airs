@@ -1,10 +1,10 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Requests\Permission;
+namespace Osi\Airs\Http\Requests\Permission;
 
 
 use Illuminate\Foundation\Http\FormRequest;
-use Zkuyuo\Airs\AdminUserFactory;
+use Osi\Airs\AdminUserFactory;
 
 class CreateOrUpdateRequest extends FormRequest
 {

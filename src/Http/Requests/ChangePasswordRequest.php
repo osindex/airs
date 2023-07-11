@@ -1,6 +1,6 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Requests;
+namespace Osi\Airs\Http\Requests;
 
 
 use Illuminate\Foundation\Http\FormRequest;

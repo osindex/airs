@@ -1,6 +1,6 @@
 # airs
 
-是基于 Laravel 开发的 Admin (https://github.com/zkuyuo/airs) 的服务端。
+是基于 Laravel 开发的 Admin (https://github.com/osi/airs) 的服务端。
 
 ## 要求
 
@@ -12,7 +12,7 @@
 首先安装laravel,并且确保你配置了正确的数据库连接。
 
 ```
-composer require zkuyuo/airs
+composer require osi/airs
 ```
 
 然后运行下面的命令来发布资源:
@@ -30,7 +30,7 @@ class Kernel extends HttpKernel
 {
     protected $routeMiddleware = [
         ...
-        'airs.permission' => \Zkuyuo\Airs\Http\Middleware\Authenticate::class,
+        'airs.permission' => \Osi\Airs\Http\Middleware\Authenticate::class,
     ];
 
     protected $middlewareGroups = [
@@ -48,7 +48,7 @@ class Kernel extends HttpKernel
 ```
 php artisan migrate
 
-php artisan db:seed --class="Zkuyuo\Airs\Database\AirsTableSeeder"
+php artisan db:seed --class="Osi\Airs\Database\AirsTableSeeder"
 ```
 
 后台登录的账号 `admin` , 密码 `secret`
@@ -65,7 +65,7 @@ return [
     'guards' => [
         // laravel-permission 相对应的 guard
         'admin' => [
-            'model' => \Zkuyuo\Airs\Models\AdminUser::class, //登录鉴权的模型
+            'model' => \Osi\Airs\Models\AdminUser::class, //登录鉴权的模型
             'login_fields' => [	// 登录验证的字段，支持多个
                 'username',
             ],

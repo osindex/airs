@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Zkuyuo\Airs\Contacts;
+namespace Osi\Airs\Contacts;
 
 
 interface UserContact

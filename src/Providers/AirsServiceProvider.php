@@ -1,10 +1,10 @@
 <?php
 
-namespace Zkuyuo\Airs\Providers;
+namespace Osi\Airs\Providers;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
-use Zkuyuo\Airs\Console\InstallCommand;
+use Osi\Airs\Console\InstallCommand;
 
 class AirsServiceProvider extends ServiceProvider
 {

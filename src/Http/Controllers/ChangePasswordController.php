@@ -1,11 +1,11 @@
 <?php
 
-namespace Zkuyuo\Airs\Http\Controllers;
+namespace Osi\Airs\Http\Controllers;
 
 
 use Auth;
 use Hash;
-use Zkuyuo\Airs\Http\Requests\ChangePasswordRequest;
+use Osi\Airs\Http\Requests\ChangePasswordRequest;
 
 class ChangePasswordController extends Controller
 {
