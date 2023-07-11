@@ -7,8 +7,8 @@ use Osi\Airs\AdminUserFactory;
 use Osi\Airs\Models\AdminUser;
 use Osi\Airs\Models\Menu;
 use Osi\Airs\Models\PermissionGroup;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
+use Osi\Airs\Models\Permission;
+use Osi\Airs\Models\Role;
 
 class AirsTableSeeder extends Seeder
 {
@@ -305,12 +305,14 @@ class AirsTableSeeder extends Seeder
      */
     private function createMenu()
     {
-        Menu::truncate();
+        Menu::whereNotNull('id')->delete();
+        // Menu::truncate();
         Menu::insert([
             [
                 'id' => 1,
                 'parent_id' => 0,
                 'uri' => '/admin/dashboard',
+                'title' => 'Dashboard',
                 'name' => 'Dashboard',
                 'icon' => 'mofont mo-icon-dashboard mo-menu',
                 'guard_name' => 'admin',
@@ -319,6 +321,7 @@ class AirsTableSeeder extends Seeder
                 'id' => 2,
                 'parent_id' => 0,
                 'uri' => '/admin/admin',
+                'title' => '系统管理',
                 'name' => '系统管理',
                 'icon' => 'mofont mo-icon-admin mo-menu',
                 'guard_name' => 'admin',
@@ -327,6 +330,7 @@ class AirsTableSeeder extends Seeder
                 'id' => 3,
                 'parent_id' => 2,
                 'uri' => '/admin/admin-user',
+                'title' => '管理员',
                 'name' => '管理员',
                 'icon' => '',
                 'guard_name' => 'admin',
@@ -335,6 +339,7 @@ class AirsTableSeeder extends Seeder
                 'id' => 4,
                 'parent_id' => 2,
                 'uri' => '/admin/role',
+                'title' => '角色',
                 'name' => '角色',
                 'icon' => '',
                 'guard_name' => 'admin',
@@ -343,6 +348,7 @@ class AirsTableSeeder extends Seeder
                 'id' => 5,
                 'parent_id' => 2,
                 'uri' => '/admin/permission',
+                'title' => '权限',
                 'name' => '权限',
                 'icon' => '',
                 'guard_name' => 'admin',
@@ -351,6 +357,7 @@ class AirsTableSeeder extends Seeder
                 'id' => 6,
                 'parent_id' => 2,
                 'uri' => '/admin/menu',
+                'title' => '菜单',
                 'name' => '菜单',
                 'icon' => '',
                 'guard_name' => 'admin',
