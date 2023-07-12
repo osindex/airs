@@ -15,7 +15,7 @@ trait AirsResponse
      */
     protected function created($content = '')
     {
-        return new Response($content, Response::HTTP_CREATED);
+        return new Response($content, config("airs.api.restful", true) ? Response::HTTP_CREATED : Response::HTTP_OK);
     }
 
     /**
@@ -26,7 +26,7 @@ trait AirsResponse
      */
     protected function accepted()
     {
-        return new Response('', Response::HTTP_ACCEPTED);
+        return new Response('', config("airs.api.restful", true) ? Response::HTTP_ACCEPTED : Response::HTTP_OK);
     }
 
     /**
@@ -37,7 +37,7 @@ trait AirsResponse
      */
     protected function noContent()
     {
-        return new Response('', Response::HTTP_NO_CONTENT);
+        return new Response('', config("airs.api.restful", true) ? Response::HTTP_NO_CONTENT : Response::HTTP_OK);
     }
 
     /**
