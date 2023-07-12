@@ -4,7 +4,6 @@ namespace Osi\Airs\Database;
 
 use Illuminate\Database\Seeder;
 use Osi\Airs\AdminUserFactory;
-use Osi\Airs\Models\AdminUser;
 use Osi\Airs\Models\Menu;
 use Osi\Airs\Models\PermissionGroup;
 use Osi\Airs\Models\Permission;
@@ -238,7 +237,7 @@ class AirsTableSeeder extends Seeder
      */
     private function createdAdminUser()
     {
-        if (!AdminUser::where('name', 'admin')->count())
+        if (!AdminUserFactory::adminUser()->where('name', 'admin')->count())
         {
             AdminUserFactory::adminUser()->create([
                 'name' => 'admin',
